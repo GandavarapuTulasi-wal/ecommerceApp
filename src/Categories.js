@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import AllProducts from "./AllProducts";
 const Categories = () => {
     let [categories, setCategories] = useState([]);
     let [value, setValue] = useState("All Categories")
@@ -16,11 +17,14 @@ const Categories = () => {
                 <option selected>All Categories</option>
                 {categories.map((val, index) => {
                     return (
-                        <option className="product-category" value={val}>{val}</option>
+                        <option className="product-category" value={val} id={index}>{val}</option>
                     );
                 })}
             </select>
-
+            <div>
+            
+            <AllProducts categories={value}></AllProducts>
+            </div>
         </div>
     )
 }

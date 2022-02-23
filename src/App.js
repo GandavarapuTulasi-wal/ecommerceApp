@@ -22,7 +22,6 @@ function App() {
 
       <Product productId={productId}></Product>
       <Categories></Categories>
-      <AllProducts></AllProducts>
     </div>
 
 

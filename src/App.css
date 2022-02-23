@@ -154,3 +154,8 @@ select{
   font-size:18px;
   color: black;
 }
+option{
+  font-size:20px;
+  font-weight:600;
+  color:rgb(6, 6, 53)
+}
